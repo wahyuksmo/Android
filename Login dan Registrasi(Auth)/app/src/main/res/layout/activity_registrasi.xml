@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrasiActivity">
+
+
+    <ImageView
+        android:id="@+id/logo_regist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/regist"
+        />
+
+    <TextView
+        android:id="@+id/judul_regist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Halaman  Registrasi"
+        android:layout_below="@id/logo_regist"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/regis_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Masukan email ....."
+        android:layout_below="@+id/judul_regist"
+        android:inputType="textEmailAddress"
+        />
+    <TextView
+        android:id="@+id/warning_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="gmail.com disarankan"
+        android:layout_below="@id/regis_email"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+
+
+
+
+    <EditText
+        android:id="@+id/password1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Masukan password ....."
+        android:layout_below="@+id/warning_email"
+        android:inputType="textPassword"
+        />
+
+    <TextView
+        android:id="@+id/warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harus minimal 6 karakter"
+        android:layout_below="@id/password1"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+
+
+    <EditText
+        android:id="@+id/password2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Konfirmasi password ....."
+        android:layout_below="@+id/warning"
+        android:inputType="textPassword"
+        />
+
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Registrasi"
+        android:layout_below="@+id/password2"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <TextView
+        android:id="@+id/keLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_register"
+        android:layout_centerHorizontal="true"
+        android:text="Sudah Punya Akun? Logn"
+        android:layout_marginTop="20dp"
+        />
+
+
+</RelativeLayout>
